@@ -1,0 +1,17 @@
+[Unit]
+Description=AutoMemeBot v3.0
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/automemebot
+ExecStart=/opt/automemebot/venv/bin/python /opt/automemebot/main.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+# Core
+python-telegram-bot>=20.7
+apscheduler>=3.10.4
+
+# AI
+groq>=0.4.1
+
+# Image processing
+Pillow>=10.2.0
+
+# Database
+psycopg2-binary>=2.9.9
+sqlalchemy[asyncio]>=2.0.23
+asyncpg>=0.29.0
+redis[hiredis]>=5.0.1
+
+# API clients
+aiohttp>=3.9.1
+pytrends>=4.9.2
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+loguru>=0.7.2
